@@ -16,4 +16,9 @@ app.controller('MainCtrl', [
 			{title: 'post 4', upvote:4}, 
 		]; 
 
+		// add events handling 
+		$scope.addPost = function(){
+			$scope.posts.push({title: "new post", upvote: 0}); 
+		}; 
+
 	}]);
