@@ -7,6 +7,12 @@ app.controller('MainCtrl', [
 		// sending test data 
 		$scope.test = 'Hello world!';
 
-		// send multiple post 
+		// send multiple post
+		$scope.posts = [
+			'post 1', 
+			'post 2', 
+			'post 3', 
+			'post 4'
+		]; 
 
 	}]);
