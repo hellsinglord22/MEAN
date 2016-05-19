@@ -18,6 +18,10 @@ app.controller('MainCtrl', [
 
 		// add events handling 
 		$scope.addPost = function(){
+
+			// sanity checks // 
+			if (!$scope.title || $scope.title === ''){ return; }
+
 			$scope.posts.push({title: $scope.title, upvote: 0}); 
 			$scope.title = ''; 
 		}; 
