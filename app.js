@@ -18,7 +18,8 @@ app.controller('MainCtrl', [
 
 		// add events handling 
 		$scope.addPost = function(){
-			$scope.posts.push({title: "new post", upvote: 0}); 
+			$scope.posts.push({title: $scope.title, upvote: 0}); 
+			$scope.title = ''; 
 		}; 
 
 	}]);

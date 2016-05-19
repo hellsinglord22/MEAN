@@ -18,9 +18,10 @@
 	</div>
 
 	<div>
-		<button ng-click="addPost()">
-			Add Post
-		</button>
+		<form ng-submit="addPost()">
+			<input type="text" ng-model="title" required></input>
+			<button type="submit">Post</button>
+		</form>
 	</div>
 </body>
 </html>
